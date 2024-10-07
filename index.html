@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FEATHER ICON  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- my Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"> <img src="./logo.png" alt="" width="40">PZ<span>WEBDEV<span>.</span></a>
+
+        <div class="navbar-nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">Tentang Kami</a>
+            <a href="#layanan" class="nav-link">Layanan</a>
+            <a href="#contact" class="nav-link">kontak</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#"><i data-feather="search"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="humberger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Ciptakan <span>Website</span> Impian Anda Bersama Kami.</h1>
+            <p>"Website Keren, Cepat, dan Selalu Ada! Seperti Mie Instan, Tapi Lebih Tahan Lama!"</p>
+            <button onclick="buat()" class="cta">Buat Sekarang</button>
+        </main>
+    </section>
+
+    <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+
+        <div class="row">
+            <div class="about-img">
+                <img src="/img/fitur-dan-funsi-website-1024x683.png" alt="Tentang Kami">
+            </div>
+            <div class="content">
+                <h3>Kenapa memilih layanan kami?</h3>
+                <p>Kami menawarkan website berkualitas tinggi, berfokus pada desain, fungsionalitas, performa, SEO, dan
+                    dukungan penuh pasca-launching.</p>
+                <p>Kami juga memastikan setiap website dibuat sesuai kebutuhan bisnis Anda, dengan teknologi terkini dan
+                    tampilan yang user-friendly, agar dapat meningkatkan pengalaman pengguna dan mencapai tujuan
+                    bisnissecara efektif.</p>
+            </div>
+        </div>
+    </section>
+    <section id="layanan" class="layanan">
+        <h2><span>Layanan</span> Kami</h2>
+        <p>Kami menawarkan desain website responsif, optimasi SEO, pengembangan fungsionalitas, dan dukungan teknis
+            berkelanjutan.</p>
+
+        <div class="row">
+            <div class="layanan-card">
+                <img src="./layananIMG/web-sekolah.png" alt="WEB-SEKOLAH" class="layanan-card-img">
+                <h3 class="layanan-card-title">- Website Sekolah -</h3>
+                <p class="layanan-card-price">IDR 90K - 500K</p>
+            </div>
+            <div class="layanan-card">
+                <img src="./layananIMG/web-desa.png" alt="WEB-DESA" class="layanan-card-img">
+                <h3 class="layanan-card-title">- Website Desa -</h3>
+                <p class="layanan-card-price">IDR 90K - 500K</p>
+            </div>
+            <div class="layanan-card">
+                <img src="./layananIMG/web-organisasi.png" alt="WEB-ORGANISASI" class="layanan-card-img">
+                <h3 class="layanan-card-title">- Website Organisasi -</h3>
+                <p class="layanan-card-price">IDR 90K - 500K</p>
+            </div>
+            <div class="layanan-card">
+                <img src="./layananIMG/web-pribadi.png" alt="WEB-PRIBADI" class="layanan-card-img">
+                <h3 class="layanan-card-title">- Website Pribadi -</h3>
+                <p class="layanan-card-price">IDR 50K - 200K</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2><span>Kontak</span> Kami</h2>
+        <p>Hubungi kami untuk konsultasi atau informasi lebih lanjut mengenai layanan kami.</p>
+
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3973.933713497483!2d105.38711802830751!3d-5.114385946833735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDYnNTEuOCJTIDEwNcKwMjMnMjEuMCJF!5e0!3m2!1sid!2sid!4v1727879038031!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            <form id="contactForm">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" id="name" placeholder="Nama" required>
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="tel" id="phone" placeholder="Nomor Handphone" required>
+                </div>
+                <div class="input-group">
+                    <i data-feather="message-square"></i>
+                    <textarea id="pesan" placeholder="Tinggalkan Pesan" required></textarea>
+                </div>
+                
+
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+    <!-- Feather Icon  -->
+    <script>
+        feather.replace();
+    </script>
+
+    <!-- My js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
